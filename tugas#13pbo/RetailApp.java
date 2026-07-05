@@ -21,7 +21,7 @@ public class RetailApp {
 
             int pilihan;
             do {
-                System.out.println("\nTOKO RETAIL BAGAS SKUY");
+                System.out.println("\nTOKO RETAIL REVAL");
                 System.out.println("1. Tampil Semua Data");
                 System.out.println("2. Tambah Data");
                 System.out.println("3. Cari Data");
@@ -51,7 +51,7 @@ public class RetailApp {
     private static void tampilData() throws SQLException {
         Statement st = conn.createStatement();
         ResultSet rs = st.executeQuery("SELECT * FROM v_barang");
-        System.out.println("\nDAFTAR BARANG TOKO RETAIL BAGAS SKUY");
+        System.out.println("\nDAFTAR BARANG TOKO RETAIL REVAL");
         System.out.println("#   Kode Barang   Nama Barang     Harga   Stok   Total Nilai");
         int i = 0;
         while (rs.next()) {
